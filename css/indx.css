@@ -1,0 +1,200 @@
+/*
+opcity hover
+section header
+section pading
+hover effect 1 
+hover effect 2
+container div 
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+.countainer{
+    width: 80%;
+    margin: auto;
+}
+.header{
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.header .logo{
+    width: 40%;
+    float: left;
+}
+
+.header .logo img{
+    width: 20%;
+    margin-top: 15;
+}
+
+.header .nav{
+    list-style: none;
+    width: 60%;
+    float: left;
+    text-align: right;
+
+}
+.header .nav li{
+display:inline-block;
+text-align:right;
+}
+.header .nav > li > a{
+    color: #fff;
+    text-decoration: none;
+     display: block;
+     padding: 30px 6px;
+     font-size: 14px;
+    
+}
+.header .nav > li > a.active:after,
+.header .nav > li > a:after {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: blue; 
+    transition: width 0.5s;
+    margin-top: 2px;
+}
+.header .nav > li > a:after {
+    width: 0%;
+}
+.header .nav > li > a.active:after {
+    width:100%;
+}
+.header .nav li a:hover:after{
+    width: 100%;
+}
+
+.dropdown{
+    position: relative;
+    
+}
+
+.dropdown-menu{
+    position: absolute;
+    background-color: blue;
+    text-align: center;
+    width: 80px;
+    left: -30%;
+    top:70%;
+    opacity:0;
+    visibility: hidden;
+    transition: opacity 1s;
+}
+.dropdown-menu a {
+    display: block;
+    color: #fff;
+    padding:8px;
+    text-decoration: none;
+}
+.dropdown:hover  .dropdown-menu{
+    opacity: 1;
+    visibility: visible;
+
+}
+  
+   
+
+
+.clear{
+    clear: both;
+}
+.home{
+    height: 100vh;
+    background-image:url(../html/background1.jpg);
+    background-size:cover ;
+}
+h1 ,h2 ,h3, h4, h5, h6{
+    font-family: montserrat,sans-serif;
+}
+button{
+    font-family: inherit;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.content{
+    width: 65%;
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.home .title{
+    color: white;
+    font-size: 3.2rem;
+    text-transform:uppercase ;
+    margin-top: 10%;
+}
+.home .home-desc{
+    margin: 15px 0;
+    color: white;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.home .btn{
+    width: 160px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+}
+.home .btn-star{
+    margin-right: 10px;
+    background-color: white;
+   
+}
+.home .btn-learn{
+    background-color: blue;
+    color: white;
+}
+.hover-opacity:hover {
+    opacity: 0.8;
+}
+.hover-opacity{
+    transition:opacity .5s;
+}
+.pd-y{
+padding: 100px 0px ;
+}
+.section-header{
+    text-align: center;
+}
+.section-header .section-title{
+font-size: 35px; 
+text-transform:uppercase ;
+margin-bottom: 10px;
+margin-top: 100px;
+}
+.section-header .line{
+    display: block;
+    width: 60px;
+    height: 5px;
+    background-color: blue;
+    margin:0px auto 70px auto;
+}
+.about-content{
+
+}
+.about-item{
+    width: 30%;
+    float: left;
+    text-align: center;
+    border: solid 1px black;
+    padding: 50px 20px;
+}
+.about-item.mg{
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
